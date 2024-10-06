@@ -1,8 +1,6 @@
 parser.out: lex.yy.o y.tab.o ass6_20CS30042_translator.o ass6_20CS30042_target_translator.o
 	g++ lex.yy.o y.tab.o ass6_20CS30042_translator.o ass6_20CS30042_target_translator.o -lfl -o parser.out
 
-ass6_20CS30042_target_translator.o: ass6_20CS30042_target_translator.cxx ass6_20CS30042_translator.h
-	g++ -c ass6_20CS30042_target_translator.cxx
 
 ass6_20CS30042_translator.o: ass6_20CS30042_translator.cxx ass6_20CS30042_translator.h
 	g++ -c ass6_20CS30042_translator.cxx
